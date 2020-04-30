@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat', cursive;
+    background-image: url(./chxm/bg.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 48px;
+    text-align: center;
+}
+
+ul li {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+ul li a {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #645ca7;
+    padding-right: 47px;
+    transition: 200ms;
+}
+
+ul li a:hover {
+    color: #d77ead;
+}
+
+.hello h1 {
+    color: white;
+    font-size: 105px;
+    padding-left: 10%;
+    padding-top: 1.8%;
+    text-shadow: 3px 2px #645ca7;
+}
+
+.hello p {
+    color: white;
+    font-size: 62px;
+    padding-left: 245px;
+    margin-top: -35px;
+    text-shadow: 3px 2px #645ca7;
+}
+
+.picProfile {
+    margin-left: 61.5%;
+    margin-top: -7.6%;
+}
+
+.tname {
+    color: white;
+    font-size: 40px;
+    margin-right: 44.6%;
+    margin-top: -18.6%;
+}
+
+.aboutme h1 {
+    color: #645ca7;
+    font-size: 105px;
+    text-align: center;
+    margin-top: 560px;
+    text-shadow: 3px 2px #ffffff;
+}
+
+.con {
+    color: #d77ead;
+    font-size: 62px;
+    margin-left: 860px;
+    margin-top: 50px;
+}
+
+.coninfo {
+    color: #afa8d0;
+    font-size: 45px;
+    margin-left: 770px;
+}
+
+.coninfo2 {
+    color: #645ca7;
+    font-size: 43px;
+}
+
+.mys {
+    color: #d77ead;
+    font-size: 62px;
+    padding-left: 135px;
+    margin-top: 50px;
+}
+
+.mysinfo {
+    color: #afa8d0;
+    font-size: 45px;
+    margin-left: 215px;
+}
+
+.mysinfo2 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #645ca7;
+    font-size: 33px;
+}
+
+.mysinfo3 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #645ca7;
+    font-size: 33px;
+    margin-left: 215px;
+}
+
+.myh {
+    color: #d77ead;
+    font-size: 62px;
+    padding-left: 135px;
+    margin-top: 50px;
+}
+
+.myhinfo {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #645ca7;
+    font-size: 33px;
+    margin-left: 215px;
+}

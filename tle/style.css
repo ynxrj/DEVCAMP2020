@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans:wght@300;400&family=Permanent+Marker&family=Righteous&family=Satisfy&family=Teko&display");
+
+body {
+    font-family: 'Satisfy', cursive;
+    background: #ed553b;
+    height: 100vh;
+    overflow: hidden;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.layer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+
+    transition: .4s;
+    transform: perspective(800px) scale(1) translateX(0) rotateY(0);
+    transform-style: preserve-3d;
+}
+
+nav {
+    vertical-align: center;
+}
+
+nav ul {
+    padding-left: 65%;
+    line-height: 2;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.front-page {
+    background-color: darkorange;
+}
+
+body:hover .front-page {
+    transform: perspective(700px) scale(0.5) translateX(-16.66%) rotateY(25deg);
+}
+

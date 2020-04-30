@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+body{
+    font-family: 'Prompt', sans-serif; 
+    background: #333;
+    color: #FFF;
+    line-height: 1.6;
+    height: 100vh;
+    
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.navbar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #818181;
+    transition: 500ms;
+}
+
+
+.navbar ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.navbar ul li.active a{
+    color: rgb(255, 255, 255);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    /* scroll-snap-type: y mandatory; */
+    overflow: hidden;
+} 
+
+.contain {
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+}
+
+.contain section{
+    flex: 1;
+    transition: all 0.5s;
+}
+
+.contain section:hover{
+    flex: 2;
+}
+
+.contain section a{
+        
+    padding: 12px 32px;
+    transition: 500ms;
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(0, 0, 0, 0.5);
+
+    text-decoration: none;
+}
+
+.contain section a:hover{
+    background:  rgba(255, 255, 255, 0.85);
+    color: rgba(0, 0, 0);
+}
+
+.tle{
+    background: url(./img/t.jpg) #81f5ff;
+    background-blend-mode: multiply;
+    background-position: left;
+    background-size: cover;
+}
+.yean{
+    background: url(./img/y.jpg) rgba(255, 147, 201, 0.562);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+}
+.chom{
+    background: url(./img/c.jpg) #ada5f0;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.home h1{
+    animation: fadein 1.5s ease-in;
+    font-size: 7rem;
+}
+ 
+
+.home p{
+    animation: fadein 1.5s ease-in;
+    margin-top: -35px;
+    font-size: 1.5rem;
+}
+.about h1{
+    animation: fadein 1.5s ease-in;
+    font-size: 5rem;
+}
+
+.about p{
+    animation: fadein 1.5s ease-in;
+    margin-top: -30px;
+    font-size: 20px;
+    padding: 10px;
+}
+.about p span{
+    animation: fadein 1.5s ease-in;
+    margin-top: -50px;
+    font-size: 16px;
+}
+
+.team h1{
+    animation: fadein 1.5s ease-in;
+    font-size: 5rem;
+}
+
+.team p{
+    animation: fadein 1.5s ease-in;
+    margin-top: -30px;
+    font-size: 1.25rem;
+    padding: 8px;
+}
+.team p span a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid white; 
+    border-radius: 50px;
+    animation: fadein 1.5s ease-in;
+    margin-top: -30px;
+    padding: 10px 20px;
+    opacity: 0.6;
+    transition: 600ms;
+}
+.team p span a:hover{
+    opacity: 1;
+}
+.team2 li a{
+    border: 1.5px solid rgb(255, 255, 255);
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 500ms;
+}
+.team2 li a:hover{
+    background-color: rgba(0, 0, 0, 0.308);
+    color: white;
+}
+.team2 li {
+    margin-right: -1290px;
+    margin-bottom: -625px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+section#home{
+    animation: fadein 1s ease-in;
+    background-image:linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1)) ;
+}
+section#about{
+    animation: fadein 1s ease-in;
+    background-image:linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0))
+}
+section#team{
+    animation: fadein 1s ease-in;
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(99, 99, 99, 0.589))
+}
+section#team2{
+    animation: fadein 1s ease-in;
+    background-image:linear-gradient(rgba(99, 99, 99, 0.589),rgba(99, 99, 99, 0.596))
+}
+.dev ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 500ms;
+    border: 1.5px solid white;
+    color: white;
+    border-radius: 100px;
+    padding: 5px 20px;
+}
+
+.dev ul li{
+    font-size: 20px;
+    text-decoration: none;    
+    display: inline-block;
+}
+
+.dev ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}  

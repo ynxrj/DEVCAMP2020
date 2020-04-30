@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Prompt', sans-serif; 
+    background: #333;
+    color: #FFF;
+    line-height: 1.6;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+} 
+
+.logo a img{
+    opacity: 0.5;
+    margin-top: 16px;
+    padding-left: 13px;
+    transition: 500ms;
+}
+
+.logo a img:hover{
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.navbar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #818181;
+    transition: 500ms;
+}
+
+
+.navbar ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.navbar ul li.active a{
+    color: rgb(255, 255, 255);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.home h1{
+    animation: fadein 1.5s ease-in;
+    font-size: 7rem;
+}
+ 
+
+.home p{
+    animation: fadein 1.5s ease-in;
+    margin-top: -35px;
+    font-size: 1.5rem;
+}
+.about h1{
+    animation: fadein 1.5s ease-in;
+    font-size: 5rem;
+}
+
+.about p{
+    animation: fadein 1.5s ease-in;
+    margin-top: -30px;
+    font-size: 1.25rem;
+    padding: 10px;
+}
+.skill h1{
+    animation: fadein 1.5s ease-in;
+    font-size: 5rem;
+}
+
+.skill p{
+    animation: fadein 1.5s ease-in;
+    margin-top: -25px;
+    font-size: 1.25rem;
+    padding: 10px;
+}
+
+.contact h1{
+    animation: fadein 1.5s ease-in;
+    font-size: 5rem;
+}
+ 
+
+.contact p{
+    animation: fadein 1.5s ease-in;
+    margin-top: -25px;
+    font-size: 1.25rem;
+}
+.dev h1{
+    animation: fadein 1.5s ease-in;
+    font-size: 5rem;
+}
+ 
+
+.dev p{
+    animation: fadein 1.5s ease-in;
+    margin-top: -25px;
+    font-size: 1.25rem;
+}
+
+
+section#home{
+    animation: fadein 1s ease-in;
+    background: url(./img/bg.jpg)no-repeat center center/cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),url(./img/bg.jpg);
+}
+section#about{
+    animation: fadein 1s ease-in;
+    background: url(./img/bg2.jpg)no-repeat center top/cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),url(./img/bg2.jpg)
+}
+section#skill{
+    animation: fadein 1s ease-in;
+    background: url(./img/service.jpg)no-repeat center center/cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),url(./img/service.jpg)
+}
+section#contact{
+    animation: fadein 1s ease-in;
+    background: url(./img/contact.JPG)no-repeat center center/cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),url(./img/contact.JPG)
+}
+section#dev{
+    animation: fadein 1s ease-in;
+    background: url(./img/dev.JPG)no-repeat center center/cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),url(./img/dev.JPG)
+}
+.dev ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 500ms;
+    border: 1.5px solid white;
+    color: white;
+    border-radius: 100px;
+    padding: 5px 20px;
+}
+
+.dev ul li{
+    font-size: 20px;
+    text-decoration: none;    
+    display: inline-block;
+}
+
+.dev ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}  
